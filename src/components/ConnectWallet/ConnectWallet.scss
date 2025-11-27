@@ -1,0 +1,113 @@
+@use "../../library/theme/scss/variables" as *;
+
+@mixin container {
+  height: 36px;
+  background: $BACKGROUND_6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.connection-container {
+  background: $BACKGROUND_4;
+  height: 60px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right-navigation {
+    .connected-wallet {
+      @include container;
+      @include font-display-small-medium;
+
+      .usdc-icon {
+        margin-right: 4px;
+        height: 16px;
+        width: 16px;
+      }
+
+      .arrow-icon {
+        width: 12px;
+        height: 12px;
+        color: $WHITE;
+        opacity: 0.7;
+        margin: 0 8px 0 4px;
+      }
+
+      .wallet-icon-container {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(161.2deg, #97fca6 -3.56%, #f6c90f 107.13%);
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .connect-btn {
+      @include container;
+      @include font-display-small-medium;
+      width: 112px;
+      background: $BACKGROUND_6;
+      position: relative;
+      color: white;
+      font-weight: $FONT_WEIGHT_MD;
+      padding: 0 12px;
+      margin: 0;
+      border: 1px solid $BACKGROUND_6;
+
+      .title {
+        background: linear-gradient(161.2deg, #97fca6 -3.56%, #f6c90f 107.13%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid #f6c90f;
+      }
+
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+  }
+
+  .left-navigation {
+    @include container;
+    @include font-display-small-medium;
+    padding: 0 8px;
+
+    .title-1 {
+      padding-right: 4px;
+    }
+    .title-2 {
+      @include font-display-small;
+
+      svg {
+        vertical-align: middle;
+        color: $WHITE;
+        opacity: 0.5;
+      }
+
+      .close-icon {
+        margin: 0 8px 0 -2px;
+      }
+
+      .arrow-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 11px;
+        opacity: 0.7;
+      }
+    }
+    img {
+      margin-right: 8px;
+    }
+  }
+}

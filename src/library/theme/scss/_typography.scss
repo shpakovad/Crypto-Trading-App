@@ -2,16 +2,42 @@
 
 $FONT_FAMILY_GEIST: "Geist", sans-serif;
 
-$FONT_SIZE_MEDIUM: 14px;
+$FONT_SIZE_XS: 10px;
+$FONT_SIZE_SM: 12px;
+$FONT_SIZE_MD: 14px;
+$FONT_SIZE_LG: 16px;
+$FONT_SIZE_XL: 18px;
+$FONT_SIZE_2XL: 20px;
 
-$FONT_WEIGHT_MEDIUM: 500;
+$FONT_WEIGHT_MD: 500;
+$FONT_WEIGHT_SM: 400;
 
-$LINE_HEIGHT_NORMAL: 140%;
+$LINE_HEIGHT_MD: 140%;
+$LINE_HEIGHT_SM: 120%;
 
-@mixin font-display-medium {
+@mixin font-display-medium($color: $WHITE) {
   font-family: $FONT_FAMILY_GEIST;
-  font-size: $FONT_SIZE_MEDIUM;
-  font-weight: $FONT_WEIGHT_MEDIUM;
-  line-height: $LINE_HEIGHT_NORMAL;
+  font-size: $FONT_SIZE_MD;
+  font-weight: $FONT_WEIGHT_MD;
+  line-height: $LINE_HEIGHT_MD;
+  color: $color;
+  font-variant-numeric: tabular-nums;
+}
+
+@mixin font-display-small-medium($color: $WHITE) {
+  font-family: $FONT_FAMILY_GEIST;
+  font-size: $FONT_SIZE_SM;
+  font-weight: $FONT_WEIGHT_SM;
+  line-height: $LINE_HEIGHT_MD;
+  color: $color;
+  font-variant-numeric: tabular-nums;
+}
+
+@mixin font-display-small($color: $WHITE) {
+  font-family: $FONT_FAMILY_GEIST;
+  font-size: $FONT_SIZE_XS;
+  font-weight: $FONT_WEIGHT_MD;
+  line-height: $LINE_HEIGHT_SM;
+  color: $color;
   font-variant-numeric: tabular-nums;
 }
