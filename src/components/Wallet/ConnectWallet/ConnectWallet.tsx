@@ -2,9 +2,9 @@ import { useMemo, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
-import btcIcon from "../../library/icons/btc.svg";
-import unionIcon from "../../library/icons/union.svg";
-import usdcIcon from "../../library/icons/usdc.svg";
+import btcIcon from "../../../library/icons/btc.svg";
+import unionIcon from "../../../library/icons/union.svg";
+import usdcIcon from "../../../library/icons/usdc.svg";
 import "./ConnectWallet.scss";
 
 const ConnectWallet = () => {
@@ -37,7 +37,6 @@ const ConnectWallet = () => {
         </div>
       </div>
       <div className="right-navigation">
-
         {isFinishedConnecting ? (
           <div className="connected-wallet">
             <img src={usdcIcon} alt="usdc-icon" className="usdc-icon" />
@@ -58,7 +57,6 @@ const ConnectWallet = () => {
             <span className="title">{isConnecting ? "Connecting..." : "Connect Wallet"}</span>
           </button>
         )}
-
       </div>
     </div>
   );

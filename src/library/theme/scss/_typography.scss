@@ -7,7 +7,7 @@ $FONT_SIZE_SM: 12px;
 $FONT_SIZE_MD: 14px;
 $FONT_SIZE_LG: 16px;
 $FONT_SIZE_XL: 18px;
-$FONT_SIZE_2XL: 20px;
+$FONT_SIZE_2XL: 30px;
 
 $FONT_WEIGHT_MD: 500;
 $FONT_WEIGHT_SM: 400;
@@ -38,6 +38,24 @@ $LINE_HEIGHT_SM: 120%;
   font-size: $FONT_SIZE_XS;
   font-weight: $FONT_WEIGHT_MD;
   line-height: $LINE_HEIGHT_SM;
+  color: $color;
+  font-variant-numeric: tabular-nums;
+}
+
+@mixin font-display-extra-extra-large($color: $WHITE) {
+  font-family: $FONT_FAMILY_GEIST;
+  font-size: $FONT_SIZE_2XL;
+  font-weight: $FONT_WEIGHT_SM;
+  line-height: $LINE_HEIGHT_SM;
+  color: $color;
+  font-variant-numeric: tabular-nums;
+}
+
+@mixin font-display-extra-large($color: $WHITE) {
+  font-family: $FONT_FAMILY_GEIST;
+  font-size: $FONT_SIZE_XL;
+  font-weight: $FONT_WEIGHT_SM;
+  line-height: $LINE_HEIGHT_MD;
   color: $color;
   font-variant-numeric: tabular-nums;
 }

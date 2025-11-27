@@ -1,4 +1,4 @@
-@use "../../library/theme/scss/variables" as *;
+@use "../../../library/theme/scss/variables" as *;
 
 @mixin container {
   height: 36px;
@@ -9,9 +9,7 @@
 }
 
 .connection-container {
-  background: $BACKGROUND_4;
-  height: 60px;
-  padding: 0 12px;
+  padding-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,9 +18,10 @@
     .connected-wallet {
       @include container;
       @include font-display-small-medium;
+      border: 1px solid transparentize($WHITE, 0.9);
 
       .usdc-icon {
-        margin-right: 4px;
+        margin: 0 4px 0 8px;
         height: 16px;
         width: 16px;
       }

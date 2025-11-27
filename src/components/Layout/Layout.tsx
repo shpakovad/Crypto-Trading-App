@@ -1,12 +1,13 @@
-import ConnectWallet from "../ConnectWallet/ConnectWallet";
 import Header from "../Header/Header";
+import Wallet from "../Wallet/Wallet";
+
 import "./Layout.scss";
 
 const Layout = () => {
   return (
     <div className="layout">
       <Header />
-      <ConnectWallet />
+      <Wallet />
     </div>
   );
 };

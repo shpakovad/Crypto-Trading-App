@@ -1,0 +1,48 @@
+@use "../../../library/theme/scss/variables" as *;
+
+@mixin centered-container {
+  display: flex;
+  align-items: center;
+}
+
+.balance-container {
+  @include centered-container;
+  justify-content: space-between;
+  padding: 8px 0;
+
+  .main-balance {
+    @include centered-container;
+
+    .title {
+      @include font-display-extra-extra-large;
+      padding-right: 6px;
+    }
+    .positive {
+      @include font-display-extra-large;
+      color: $GREEN;
+      opacity: 0.9;
+    }
+  }
+
+  .controls-icons {
+    @include centered-container;
+    div {
+      @include centered-container;
+      justify-content: center;
+      background: $BACKGROUND_6;
+      height: 36px;
+      width: 36px;
+      border-radius: 8px;
+      &:first-child {
+        margin-right: 8px;
+      }
+
+      svg {
+        height: 16px;
+        width: 16px;
+        color: $WHITE;
+        opacity: 0.3;
+      }
+    }
+  }
+}
