@@ -1,0 +1,21 @@
+@use "./library/theme/scss/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  @include mobile {
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 90vh;
+  }
+}

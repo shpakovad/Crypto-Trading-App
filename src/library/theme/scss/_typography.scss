@@ -1,0 +1,17 @@
+@use "./colors" as *;
+
+$FONT_FAMILY_GEIST: "Geist", sans-serif;
+
+$FONT_SIZE_MEDIUM: 14px;
+
+$FONT_WEIGHT_MEDIUM: 500;
+
+$LINE_HEIGHT_NORMAL: 140%;
+
+@mixin font-display-medium {
+  font-family: $FONT_FAMILY_GEIST;
+  font-size: $FONT_SIZE_MEDIUM;
+  font-weight: $FONT_WEIGHT_MEDIUM;
+  line-height: $LINE_HEIGHT_NORMAL;
+  font-variant-numeric: tabular-nums;
+}

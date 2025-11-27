@@ -1,0 +1,51 @@
+@use "../../library/theme/scss/variables" as *;
+
+.header-container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: $BACKGROUND_6;
+
+  .left-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    color: $WHITE;
+  }
+
+  .more-icon {
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .arrow-icon {
+    height: 12px;
+    width: 12px;
+  }
+
+  .close-icon {
+    height: 20px;
+    width: 18px;
+  }
+
+  .arrow-icon,
+  .close-icon {
+    opacity: 0.5;
+  }
+
+  .title {
+    @include font-display-medium;
+    color: $WHITE;
+  }
+
+  .trading-pair {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+}
