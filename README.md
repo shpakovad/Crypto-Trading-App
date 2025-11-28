@@ -22,9 +22,9 @@ Modern cryptocurrency trading platform with real-time chart.
 ## Performance Optimizations
 
 ### Implemented:
-- ✅ Code splitting
-- ✅ Lazy loading of heavy components
-- ✅ SVG optimization
+- Code splitting
+- Lazy loading of heavy components
+- SVG optimization
 
 ## Installation
 
