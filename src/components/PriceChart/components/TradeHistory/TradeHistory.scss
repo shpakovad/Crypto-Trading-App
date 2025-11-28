@@ -1,0 +1,63 @@
+@use "../../../../library/theme/scss/variables" as *;
+
+.trade-history {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  .trade-item {
+    position: absolute;
+
+    &.item-1 {
+      opacity: 0.2;
+      .trade-name {
+        @include font-display-small-medium($color: $GREEN);
+        margin-right: 4px;
+      }
+    }
+
+    &.item-2 {
+      .trade-name {
+        @include font-display-small-medium($color: $ORANGE);
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .trade-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    align-items: center;
+  }
+
+  .trade-name {
+    font-weight: $FONT_WEIGHT_MD;
+  }
+
+  .trade-time {
+    @include font-display-small($color: $GRAY);
+    font-weight: $FONT_WEIGHT_SM;
+  }
+
+  .trade-action {
+    @include font-display-small-medium($color: $WHITE);
+    font-weight: $FONT_WEIGHT_MD;
+  }
+
+  .trade-action.long {
+    color: #97fca6;
+  }
+
+  .trade-action.short {
+    color: #ff6b6b;
+  }
+
+  .action-amount {
+    font-weight: 600;
+    margin-left: 4px;
+  }
+}

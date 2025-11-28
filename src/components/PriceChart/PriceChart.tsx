@@ -3,6 +3,7 @@ import { Area, AreaChart, Tooltip, XAxis, YAxis } from "recharts";
 import { getChartData } from "../../data/chartData";
 import { ITooltipProps } from "../types";
 import { ACTIVE_DOT_STYLE, AXIS_STYLE, CHART_SIZE, TOOLTIP_CURSOR_STYLE } from "./chart-config";
+import TradeHistory from "./components/TradeHistory/TradeHistory";
 import "./PriceChart.scss";
 
 const CustomTooltip = (props: ITooltipProps) => {
@@ -50,6 +51,7 @@ const PriceChart = () => {
           activeDot={ACTIVE_DOT_STYLE}
         />
       </AreaChart>
+      <TradeHistory />
     </div>
   );
 };

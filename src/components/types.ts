@@ -15,3 +15,12 @@ export interface ITooltipProps {
     };
   }>;
 }
+
+export interface ITrade {
+  id: number;
+  name: string;
+  time: string;
+  action: string;
+  amount: string;
+  style: { bottom: string; left: string };
+}
