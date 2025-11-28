@@ -11,6 +11,9 @@ const Layout = () => {
       <Wallet />
       <PriceChart />
       <PositionDetails />
+      <div className="home-indicator">
+        <div className="indicator" />
+      </div>
     </div>
   );
 };

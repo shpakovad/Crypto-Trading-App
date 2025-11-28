@@ -22,3 +22,9 @@
     }
   }
 }
+
+@include mobile {
+  .chart-container {
+    margin: 0;
+  }
+}

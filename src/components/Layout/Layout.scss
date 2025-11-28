@@ -6,3 +6,9 @@
   margin: 0 auto;
   background: $BACKGROUND_5;
 }
+
+@include mobile {
+  .layout {
+    max-width: unset;
+  }
+}
