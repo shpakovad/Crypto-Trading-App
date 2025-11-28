@@ -1,0 +1,48 @@
+@use "../../../../library/theme/scss/variables" as *;
+
+.controls-container {
+  background: $BACKGROUND_4;
+  padding: 8px 0 0 12px;
+  .range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .period-item {
+      background: $BACKGROUND_6;
+      border-radius: 8px;
+      @include font-display-small-medium;
+      padding: 5px 30px;
+      border: 1px solid $BACKGROUND_6;
+
+      &.is-active {
+        border: 1px solid rgba(236, 189, 117, 0.7);
+        color: rgba(236, 189, 117, 0.7);
+        background: $DARK_GRAY;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    .period-item {
+      &.is-active {
+        .circle {
+          background: $ORANGE_1;
+          width: 24px;
+          border-radius: 32px;
+        }
+      }
+      .circle {
+        width: 8px;
+        height: 8px;
+        background: $BACKGROUND_3;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+  }
+}

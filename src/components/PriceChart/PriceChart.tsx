@@ -3,6 +3,7 @@ import { Area, AreaChart, Tooltip, XAxis, YAxis } from "recharts";
 import { getChartData } from "../../data/chartData";
 import { ITooltipProps } from "../types";
 import { ACTIVE_DOT_STYLE, AXIS_STYLE, CHART_SIZE, TOOLTIP_CURSOR_STYLE } from "./chart-config";
+import Controls from "./components/Controls/Controls";
 import TradeHistory from "./components/TradeHistory/TradeHistory";
 import "./PriceChart.scss";
 
@@ -52,6 +53,7 @@ const PriceChart = () => {
         />
       </AreaChart>
       <TradeHistory />
+      <Controls />
     </div>
   );
 };

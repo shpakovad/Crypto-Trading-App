@@ -8,7 +8,7 @@ const TRADE_DATA: ITrade[] = [
     time: "12:32",
     action: "Opened Long",
     amount: "10X",
-    style: { bottom: "90px", left: "0" },
+    style: { bottom: "90px", left: "12px" },
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const TRADE_DATA: ITrade[] = [
     time: "12:45",
     action: "Opened Short",
     amount: "100X",
-    style: { bottom: "43px", left: "0" },
+    style: { bottom: "43px", left: "12px" },
   },
 ];
 
