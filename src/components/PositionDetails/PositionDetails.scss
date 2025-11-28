@@ -5,7 +5,10 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top: 1px solid $WHITE_OPACITY_5;
-  padding: 8px;
+  padding: 8px 8px 0 8px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
   .position-header {
     display: flex;
@@ -121,7 +124,11 @@
   }
 
   .home-indicator {
-    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    padding-top: 8px;
 
     div {
       background: $WHITE;

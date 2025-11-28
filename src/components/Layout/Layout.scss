@@ -5,6 +5,8 @@
   height: 100vh;
   margin: 0 auto;
   background: $BACKGROUND_5;
+  display: flex;
+  flex-direction: column;
 }
 
 @include mobile {
