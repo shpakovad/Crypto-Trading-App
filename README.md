@@ -1,11 +1,11 @@
 # Crypto Trading App
 
-Modern cryptocurrency trading platform with real-time charts and portfolio management.
+Modern cryptocurrency trading platform with real-time chart.
 
 ## Performance
 
 - Lighthouse Score: 93 (Desktop) / 61 (Mobile)
-- Framework: React 18 + TypeScript
+- Framework: React 19 + TypeScript
 
 ## Tech Stack
 
@@ -22,7 +22,7 @@ Modern cryptocurrency trading platform with real-time charts and portfolio manag
 ## Performance Optimizations
 
 ### Implemented:
-- ✅ Code splitting for routes
+- ✅ Code splitting
 - ✅ Lazy loading of heavy components
 - ✅ SVG optimization
 
