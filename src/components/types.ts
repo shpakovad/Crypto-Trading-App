@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ITooltipProps {
   active?: boolean;
   payload?: Array<{
@@ -27,7 +29,7 @@ export interface ITrade {
 
 export interface INavigation {
   name: string;
-  src: string;
+  icon: ReactNode;
   isActive?: boolean;
   reward?: string;
 }

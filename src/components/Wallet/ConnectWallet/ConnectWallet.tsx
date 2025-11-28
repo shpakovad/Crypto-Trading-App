@@ -2,9 +2,7 @@ import { useMemo, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
-import btcIcon from "../../../library/icons/btc.svg";
-import unionIcon from "../../../library/icons/union.svg";
-import usdcIcon from "../../../library/icons/usdc.svg";
+import { BtcIcon, UnionIcon, UsdcIcon } from "../../assets/icons/Icons";
 import "./ConnectWallet.scss";
 
 const ConnectWallet = () => {
@@ -28,7 +26,7 @@ const ConnectWallet = () => {
   return (
     <div className="connection-container">
       <div className="left-navigation">
-        <img alt="btc-icon" src={btcIcon} />
+        <BtcIcon />
         <span className="title-1">BTCDEGEN/USDC</span>
         <div className="title-2">
           <span>100</span>
@@ -39,11 +37,11 @@ const ConnectWallet = () => {
       <div className="right-navigation">
         {isFinishedConnecting ? (
           <div className="connected-wallet">
-            <img src={usdcIcon} alt="usdc-icon" className="usdc-icon" />
+            <UsdcIcon className="usdc-icon" />
             <span>15,000.00</span>
             <IoIosArrowDown className="arrow-icon" />
             <div className="wallet-icon-container">
-              <img src={unionIcon} alt="union-icon" />
+              <UnionIcon />
             </div>
           </div>
         ) : (

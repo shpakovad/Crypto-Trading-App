@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Area, AreaChart, Tooltip, XAxis, YAxis } from "recharts";
 
 import { getChartData } from "../../data/chartData";
@@ -8,7 +10,6 @@ import Controls from "./components/Controls/Controls";
 import TradeHistory from "./components/TradeHistory/TradeHistory";
 import ConditionChartWrapper from "./ConditionChartWrapper";
 import "./PriceChart.scss";
-import React from "react";
 
 const CustomTooltip = (props: ITooltipProps) => {
   const { active, payload } = props;
@@ -21,8 +22,6 @@ const CustomTooltip = (props: ITooltipProps) => {
   }
   return null;
 };
-
-
 
 const PriceChart = () => {
   const chartData = getChartData();

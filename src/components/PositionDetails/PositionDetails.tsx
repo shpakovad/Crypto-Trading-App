@@ -1,17 +1,14 @@
 import { IoIosArrowDown } from "react-icons/io";
 
-import rewardsIcon from "../../library/icons/egg.svg";
-import tradeIcon from "../../library/icons/navigation.svg";
-import positionsIcon from "../../library/icons/subtract.svg";
-import profileIcon from "../../library/icons/user.svg";
+import { PositionsIcon, ProfileIcon, RewardsIcon, TradeIcon } from "../assets/icons/Icons";
 import { INavigation } from "../types";
 import "./PositionDetails.scss";
 
 const NAV_ITEMS: INavigation[] = [
-  { name: "Trade", src: tradeIcon, isActive: true },
-  { name: "Positions", src: positionsIcon },
-  { name: "Rewards", src: rewardsIcon, reward: "345,29k" },
-  { name: "Profile", src: profileIcon },
+  { name: "Trade", icon: <TradeIcon />, isActive: true },
+  { name: "Positions", icon: <PositionsIcon /> },
+  { name: "Rewards", icon: <RewardsIcon />, reward: "345,29k" },
+  { name: "Profile", icon: <ProfileIcon /> },
 ];
 
 interface IClassesProps {
@@ -45,9 +42,7 @@ const PositionDetails = () => {
             className={getClassForNavItem({ isActive: nav.isActive, reward: nav.reward })}
             key={nav.name}
           >
-            <span className="img-container">
-              <img alt={nav.name} src={nav.src} />
-            </span>
+            <span className="img-container">{nav.icon}</span>
             <span className="name">{nav.name}</span>
             {nav.reward && <div className="reward-title">{nav.reward}</div>}
           </div>
