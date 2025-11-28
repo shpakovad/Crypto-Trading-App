@@ -1,6 +1,7 @@
 @use "./colors" as *;
 
 $FONT_FAMILY_GEIST: "Geist", sans-serif;
+$FONT_FAMILY_ROBOTO: "Roboto", sans-serif;
 
 $FONT_SIZE_XS: 10px;
 $FONT_SIZE_SM: 12px;
@@ -12,6 +13,7 @@ $FONT_SIZE_2XL: 30px;
 $FONT_WEIGHT_MD: 500;
 $FONT_WEIGHT_SM: 400;
 
+$LINE_HEIGHT_LG: 150%;
 $LINE_HEIGHT_MD: 140%;
 $LINE_HEIGHT_SM: 120%;
 
@@ -57,5 +59,13 @@ $LINE_HEIGHT_SM: 120%;
   font-weight: $FONT_WEIGHT_SM;
   line-height: $LINE_HEIGHT_MD;
   color: $color;
+  font-variant-numeric: tabular-nums;
+}
+
+@mixin chart-font-display {
+  font-family: $FONT_FAMILY_ROBOTO;
+  font-weight: $FONT_WEIGHT_SM;
+  font-size: $FONT_SIZE_XS;
+  line-height: $LINE_HEIGHT_LG;
   font-variant-numeric: tabular-nums;
 }

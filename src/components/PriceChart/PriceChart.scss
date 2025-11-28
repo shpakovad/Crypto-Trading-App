@@ -1,0 +1,26 @@
+@use "../../library/theme/scss/variables" as *;
+
+.chart-container {
+  margin: 0 12px;
+  width: 100%;
+  height: 348px;
+
+  .custom-tooltip {
+    @include chart-font-display;
+    background: $GREEN;
+    border-radius: 4px;
+    padding: 0 4px;
+  }
+
+  .recharts-wrapper {
+    background: $BACKGROUND_4;
+  }
+
+  .recharts-layer.recharts-cartesian-axis-tick-label {
+    .recharts-text tspan {
+      @include chart-font-display;
+      fill: $WHITE;
+      opacity: 0.5;
+    }
+  }
+}
