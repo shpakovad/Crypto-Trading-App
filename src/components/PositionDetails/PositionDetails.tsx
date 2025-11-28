@@ -1,6 +1,5 @@
-import { IoIosArrowDown } from "react-icons/io";
-
 import { PositionsIcon, ProfileIcon, RewardsIcon, TradeIcon } from "../assets/icons/Icons";
+import { IoIosArrowDown } from "../assets/react-icons";
 import { INavigation } from "../types";
 import "./PositionDetails.scss";
 

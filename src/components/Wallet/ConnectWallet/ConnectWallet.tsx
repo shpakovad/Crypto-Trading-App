@@ -1,8 +1,7 @@
 import { useMemo, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoClose } from "react-icons/io5";
 
 import { BtcIcon, UnionIcon, UsdcIcon } from "../../assets/icons/Icons";
+import { IoClose, IoIosArrowDown } from "../../assets/react-icons";
 import "./ConnectWallet.scss";
 
 const ConnectWallet = () => {

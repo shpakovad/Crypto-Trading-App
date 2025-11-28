@@ -1,6 +1,4 @@
-import { FaHeart } from "react-icons/fa6";
-import { IoSettingsOutline } from "react-icons/io5";
-
+import { FaHeart, IoSettingsOutline } from "../../assets/react-icons";
 import "./Balance.scss";
 
 const Balance = () => {

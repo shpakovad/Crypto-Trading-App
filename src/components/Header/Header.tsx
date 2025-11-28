@@ -1,7 +1,4 @@
-import { IoIosArrowDown } from "react-icons/io";
-import { IoClose } from "react-icons/io5";
-import { TfiMore } from "react-icons/tfi";
-
+import { IoClose, IoIosArrowDown, TfiMore } from "../assets/react-icons";
 import "./Header.scss";
 
 const Header = () => {
