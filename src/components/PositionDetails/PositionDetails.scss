@@ -1,0 +1,134 @@
+@use "../../library/theme/scss/variables" as *;
+
+.position-details-container {
+  background: $BACKGROUND_5;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 1px solid $WHITE_OPACITY_5;
+  padding: 8px;
+
+  .position-header {
+    display: flex;
+    .position-title {
+      @include chart-font-display;
+      color: $WHITE_OPACITY_50;
+      font-size: $FONT_SIZE_SM;
+      padding-right: 44px;
+    }
+
+    .position-metrics {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .arrow-icon {
+        width: 14px;
+        height: 14px;
+        fill: $WHITE_OPACITY_70;
+      }
+      .metric {
+        span {
+          @include font-display-small-medium;
+          background: $BACKGROUND_7;
+          border-radius: 8px;
+          padding: 8px 16px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .position-type {
+    padding: 8px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .long {
+      margin-right: 8px;
+      @include font-display-medium($color: $GREEN);
+      background: $GREEN_OPACITY_10;
+      border: 1px solid $GREEN_OPACITY_10;
+    }
+
+    .short {
+      @include font-display-medium($color: $ORANGE_3);
+      background: $ORANGE_OPACITY_10;
+      border: 1px solid $ORANGE_OPACITY_10;
+    }
+
+    button {
+      border-radius: 10px;
+      padding: 7px 0;
+      width: 179px;
+    }
+  }
+
+  .position-nav {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .reward-title {
+      position: absolute;
+      left: 16px;
+      bottom: 38px;
+      border-radius: 12px;
+      background: $GOLD;
+      padding: 2px 6px;
+      @include font-display-small($color: $GOLD_100);
+    }
+
+    &.reward {
+      position: relative;
+    }
+
+    &.is-active {
+      .img-container {
+        padding: 6px;
+        background: linear-gradient(
+          163.35deg,
+          rgba(151, 252, 166, 0.1) -41.07%,
+          rgba(255, 197, 2, 0.1) 102.04%
+        );
+        border-radius: 12px;
+      }
+      .name {
+        top: 2px;
+      }
+    }
+
+    .name {
+      @include font-display-small;
+      position: relative;
+      top: 8px;
+    }
+
+    .img-container {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .home-indicator {
+    padding-top: 20px;
+
+    div {
+      background: $WHITE;
+      width: 134px;
+      height: 5px;
+      border-radius: 95px;
+      margin: 0 auto;
+    }
+  }
+}

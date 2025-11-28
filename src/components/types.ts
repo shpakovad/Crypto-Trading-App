@@ -24,3 +24,10 @@ export interface ITrade {
   amount: string;
   style: { bottom: string; left: string };
 }
+
+export interface INavigation {
+  name: string;
+  src: string;
+  isActive?: boolean;
+  reward?: string;
+}

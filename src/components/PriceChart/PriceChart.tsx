@@ -22,7 +22,7 @@ const CustomTooltip = (props: ITooltipProps) => {
 const PriceChart = () => {
   const chartData = getChartData();
 
-  if (!chartData) return;
+  if (!chartData) return null;
   return (
     <div className="chart-container">
       <AreaChart data={chartData} {...CHART_SIZE}>

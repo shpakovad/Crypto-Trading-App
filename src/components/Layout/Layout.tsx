@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import PositionDetails from "../PositionDetails/PositionDetails";
 import PriceChart from "../PriceChart/PriceChart";
 import Wallet from "../Wallet/Wallet";
 import "./Layout.scss";
@@ -9,6 +10,7 @@ const Layout = () => {
       <Header />
       <Wallet />
       <PriceChart />
+      <PositionDetails />
     </div>
   );
 };
